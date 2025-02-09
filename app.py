@@ -57,4 +57,4 @@ def rewrite():
 if __name__ == '__main__':
     if not GEMINI_API_KEY:
         raise ValueError("GEMINI_API_KEY bulunamadı. Lütfen .env dosyasını kontrol edin.")
-    app.run(debug=True) 
+    app.run(host='0.0.0.0', port=8080) 
